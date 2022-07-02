@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  cheeseria-nest-server:
+    container_name: cheeseria-nest-server-prod
+    build:
+      context: .
+      dockerfile: 'Dockerfile'
+    ports:
+      - '3000:3000'
