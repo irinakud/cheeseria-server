@@ -39,4 +39,7 @@ export class CheesesController {
   remove(@Param('id') id: string) {
     return this.cheesesService.remove(id);
   }
+
+  //TODO: store cheese images locally, rather than getting them from a remote source,
+  //get a cheese image by cheese id endpoint, use the new endpoint in FE instead of picturePath property
 }

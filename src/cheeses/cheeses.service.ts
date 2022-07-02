@@ -6,6 +6,7 @@ import { Cheese } from './entities/cheese.entity';
 
 @Injectable()
 export class CheesesService {
+  // TODO: store cheeses in a database
   private cheeses: Cheese[] = initialCheeses;
 
   create(createCheeseDto: CreateCheeseDto) {
